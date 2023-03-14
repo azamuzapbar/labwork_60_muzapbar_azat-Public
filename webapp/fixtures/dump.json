@@ -1,0 +1,140 @@
+[
+{
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "title": "Samsung",
+    "text": "samsung",
+    "image": "sams",
+    "category": "phone",
+    "remainder": 10,
+    "cost": "10.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "title": "hp",
+    "text": "hp",
+    "image": "hp",
+    "category": "laptop",
+    "remainder": 5,
+    "cost": "5.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "title": "huawei",
+    "text": "huawei",
+    "image": "huawei",
+    "category": "phone",
+    "remainder": 3,
+    "cost": "3.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "title": "iphone",
+    "text": "iphone",
+    "image": "iphone",
+    "category": "phone",
+    "remainder": 4,
+    "cost": "4.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "title": "asus",
+    "text": "asus",
+    "image": "asus",
+    "category": "laptop",
+    "remainder": 9,
+    "cost": "9.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "title": "Dell",
+    "text": "Dell",
+    "image": "dell",
+    "category": "laptop",
+    "remainder": 3,
+    "cost": "20.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 7,
+  "fields": {
+    "title": "Macbook",
+    "text": "macbook",
+    "image": "mac",
+    "category": "laptop",
+    "remainder": 5,
+    "cost": "30.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 8,
+  "fields": {
+    "title": "Pixel",
+    "text": "Pixel",
+    "image": "Pixel",
+    "category": "phone",
+    "remainder": 2,
+    "cost": "5.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 9,
+  "fields": {
+    "title": "Nokia",
+    "text": "Nokia",
+    "image": "Nokia",
+    "category": "phone",
+    "remainder": 6,
+    "cost": "7.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 10,
+  "fields": {
+    "title": "LG",
+    "text": "LG",
+    "image": "LG",
+    "category": "laptop",
+    "remainder": 4,
+    "cost": "5.00"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$xugD0UuikULUennEKw7fRx$+4Yzc4iNsWtc8ECn37kmYZSFVi4BQwLGL1vL3SLu+Uo=",
+    "last_login": "2023-03-14T03:27:09.997Z",
+    "is_superuser": true,
+    "username": "azat",
+    "first_name": "",
+    "last_name": "",
+    "email": "azat@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-03-14T03:26:50.830Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

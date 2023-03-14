@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+{% include 'partial/search.html' %}
+        {% for product in products %}
+<h2>Title: {{ product.title }}</h2>
+<p> Description: {{ product.text }}</p>
+
+<p><a href="{% url 'article_detail' product.pk %}"> Details </a></p>
+<p><a href="{% url 'article_update' product.pk %}"> Update </a></p>
+<p><a href="{% url 'article_delete' product.pk %}"> Delete </a></p>
+        {% endfor %}
+{% if is_paginated %}
+   {% include 'partial/pagination.html' %}
+{% endif %}
+{% endblock %}

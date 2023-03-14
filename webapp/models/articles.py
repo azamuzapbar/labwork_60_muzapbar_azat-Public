@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class Basket(models.Model):
+    quantity = models.IntegerField(verbose_name='количество')

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Cart</h1>
+  <table>
+    <tbody>
+      {% for product in products %}
+        <tr>
+          <td>{{ product.title }}</td>
+          <td>{{ product.cost }}</td>
+          <td>{{ quantity }}</td>
+
+          <td>
+            <form method="POST" action="{% url 'delete_from_cart' item.pk %}">
+              {% csrf_token %}
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="5">Cart is empty.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total:</td>
+        <td colspan="2">{{ cart_total }}</td>
+      </tr>
+    </tfoot>
+  </table>
+
+{% endblock %}

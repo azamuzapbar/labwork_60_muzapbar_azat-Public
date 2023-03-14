@@ -8,7 +8,11 @@
 
 {% block content %}
 
-    <p>Title {{ product.title }} </p>
-    <p>Description {{ product.text }} </p>
+<p>Title {{ product.title }} </p>
+<p>Description {{ product.text }} </p>
+<form method="POST" action="{% url 'add_to_cart' object.pk %}">
+    {% csrf_token %}
+    <button type="submit">Add to cart</button>
+</form>
 
 {% endblock %}

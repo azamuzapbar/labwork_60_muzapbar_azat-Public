@@ -49,3 +49,6 @@ class ProductForm(forms.ModelForm):
 
 class SimpleSearchForm(forms.Form):
     search = forms.CharField(max_length=100, required=False, label="Найти")
+
+class AddToCartForm(forms.Form):
+    quantity = forms.IntegerField(min_value=1, max_value=100, initial=1, widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Enter quantity...'}))

@@ -14,7 +14,7 @@ class Product(models.Model):
     category = models.TextField(verbose_name='категория', choices=category, default='other', null=False, blank=False)
     remainder = models.PositiveIntegerField(validators=[MinValueValidator(0)])
     cost = models.DecimalField(max_digits=7, decimal_places=2)
-    # basket = models.ForeignKey(to='Basket', related_name='products', on_delete=models.CASCADE, null=True, blank=True)
+    basket = models.ForeignKey(to='Basket', related_name='products', on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return f'{self.title} - {self.text} - {self.category}'
